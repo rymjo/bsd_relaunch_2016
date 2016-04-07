@@ -1,0 +1,35 @@
+<main id="main">
+
+  <div class="container">
+
+    <div class="row section topspace">
+      <div class="col-md-12 maincontent">
+        <input type="text" ng-model="termine.search" class="search-query" id="termin_search"  placeholder="Datum...">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th ng-repeat="(key, val) in allTermine[0]">{{key | uppercase}}</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="item in allTermine | filter:termine.search | orderBy:'datum':true">
+            <td ng-repeat="(key, val) in item">{{val}}</td>
+          </tr>
+          </tbody>
+          <tfoot>
+          <tr>
+            <td><a herf ="http://www.itf-d.de/index.php/termine.html" target="_parent">ITF-D Termine</a></td>
+            <td>Termine der ITF Deutschland</td>
+          </tr>
+          <tr>
+            <td><a herf =" http://www.itf-nw.de/index.php/termine.html" target="_parent">ITF NW Termine</a></td>
+            <td>Termine des Landesverbandes Nordrhein-Westfalen</td>
+          </tr>
+
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+

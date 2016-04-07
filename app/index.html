@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Budosport D&uuml;sseldorf e.V.">
+    <meta name="keywords" content="Kickboxen, Kickboxen Düsseldorf, Taekwon-Do, Taekwon-Do Düsseldorf, ITF-D, ITF Taewon-Do, Budo, Budosport, Kampfsport, Kampfsport Düsseldorf, Budosport D&uuml;sseldorf e.V.">
+    <meta name="author" content="Jörn Rymkuß">
+
+    <title>Budosport D&uuml;sseldorf e.V.</title>
+
+    <link rel="shortcut icon" href="../images/gt_favicon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-backtop/dist/angular-backtop.css" />
+    <link rel="stylesheet" href="bower_components/AngularJS-Toaster/toaster.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- endbuild -->
+    <!--[if lt IE 9]>
+    <script src="scripts/html5shiv.js"></script> <![endif]-->
+  </head>
+  <body ng-app="bsdApp" class="home">
+
+
+  <header id="header">
+    <div id="head" class="parallax" parallax-speed="2">
+      <h1 id="logo" class="text-center" style="height: 300px">
+
+
+      </h1>
+    </div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+        <!--  TODO: If admin tool exists.. Only local url to change for Live System
+          <a class="navbar-brand" href="http://localhost:8888/angular-login-master/" target="_blank"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>
+        -->
+        </div>
+
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#/">Home</a></li>-->
+            <li><a ng-href="#/about">Verein</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Sportarten <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/sport/taekwondo">Taekwon-Do</a></li>
+                <li><a href="#/sport/kickboxen">Kickboxen</a></li>
+              </ul>
+            </li>
+            <li><a ng-href="#/termine">Termine</a></li>
+            <li><a ng-href="#/service">Service</a></li>
+            <li><a ng-href="#/blog">Blog</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">Impressum <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#/impressum">Impressum</a></li>
+                <li><a href="#/datenschutz">Datenschutzerklärung</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+  </header>
+
+
+    <div class="container">
+      <div ng-view=""></div>
+    </div>
+
+    <!--<div class="footer">-->
+      <!--<div class="container">-->
+        <!--<p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 widget">
+          <h3 class="widget-title">Kontakt</h3>
+
+          <div class="widget-body">
+            <p>
+              Budosport Düsseldorf e.V.
+              <br>
+              Ilyas Ormankiran
+              <br>Tel.: (02103) - 258377
+              <br>E-Mail: <a href="mailto:IO@budosport-duesseldorf.de">IO@budosport-duesseldorf.de</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-3 widget">
+          <h3 class="widget-title">Social</h3>
+
+          <div class="widget-body">
+            <p class="follow-me-icons">
+              <!--<a href=""><i class="fa fa-twitter fa-2"></i></a>-->
+              <!--<a href=""><i class="fa fa-dribbble fa-2"></i></a>-->
+              <!--<a href=""><i class="fa fa-github fa-2"></i></a>-->
+              <a href="https://www.facebook.com/groups/161217217331451/" target="_blank"><i class="fa fa-facebook fa-2"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 widget">
+          <h3 class="widget-title">Impressum</h3>
+
+          <div class="widget-body">
+            <p>
+              Budosport Düsseldorf e.V.
+              <br>
+              Hördtweg 41, 40470 Düsseldorf
+              <br>
+              Vereinsregister: Register-Nr.: 8649
+              <br>
+              1. Vorsitzender: Ilyas Ormankiran, Tel.: (02103) - 258377, Mobil: (0173) - 2717799, E-Mail: <a href="mailto:IO@budosport-duesseldorf.de">IO@budosport-duesseldorf.de</a>
+              <br>
+              2. Vorsitzende: Katharina Walke, E-Mail: <a href="mailto:kw@budosport-duesseldorf.de">kw@budosport-duesseldorf.de</a>
+              <br>
+              Kassenwart: Georg Langer
+              <br>
+              <br><a ng-href="#/datenschutz">Datenschutzerklärung</a>
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- /row of widgets -->
+    </div>
+  </footer>
+
+  <footer id="underfooter">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 widget">
+          <div class="widget-body">
+            <p> </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 widget">
+          <div class="widget-body">
+            <p class="text-right">
+              Copyright &copy; 2014,  Budosport Düsseldorf e.V.<br>
+          </div>
+        </div>
+
+      </div>
+      <!-- /row of widgets -->
+    </div>
+  </footer>
+    <!-- back-to top button -->
+    <back-top><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></back-top>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-backtop/dist/angular-backtop.js"></script>
+    <script src="bower_components/AngularJS-Toaster/toaster.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/template.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/sport.js"></script>
+    <script src="scripts/controllers/blog.js"></script>
+    <script src="scripts/controllers/termine.js"></script>
+    <script src="scripts/controllers/service.js"></script>
+
+    <script src="scripts/services/terminService.js"></script>
+    <script src="scripts/controllers/impressum.js"></script>
+    <script src="scripts/services/blogservice.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
