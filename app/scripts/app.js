@@ -17,7 +17,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'angular.backtop',
-    'toaster'
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

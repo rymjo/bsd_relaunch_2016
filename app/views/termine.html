@@ -13,7 +13,9 @@
           </thead>
           <tbody>
           <tr ng-repeat="item in allTermine | filter:termine.search | orderBy:'datum':true">
-            <td ng-repeat="(key, val) in item">{{val}}</td>
+            <td ng-click="openDetail(item)" ng-repeat="(key, val) in item">
+              {{val}}
+            </td>
           </tr>
           </tbody>
           <tfoot>
@@ -28,6 +30,18 @@
 
           </tfoot>
         </table>
+        <!--
+        <ng-switch on="anyItemOpen()">
+
+          <div ng-switch-when="true">
+            <hr>
+            <div ng-controller="DetailCtrl">
+              {{opened.beschreibung}}: overlay: tweet, share, pin
+            </div>
+            <a ng-click="close()">close</a>
+          </div>
+        </ng-switch>
+            -->
       </div>
     </div>
   </div>

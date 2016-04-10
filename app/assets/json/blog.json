@@ -1,18 +1,12 @@
 [
+
   {
-    "datum": "01.03.2016",
-    "titel":"Training in den Osterferien",
-    "beschreibung": "In den Osterferien findet donnerstags Training statt.",
-    "bild":"../images/mac.jpg",
+    "datum": "10.04.2016",
+    "titel": "Kidsprogramm",
+    "beschreibung": "Es ist wichtig, Kinder schon im frühen Alter für Spaß am Sport zu begeistern. Leider sind die Möglichkeiten/Angebote an sportlichen Aktivitäten für Kinder im Alter zwischen 3 und 6 sehr begrenzt. Wir als Verein bieten für diese spezielle Altersgruppe ein Programm an, mit welchem wir den Kindern spielerisch Spaß am Sport vermitteln wollen. Weiterhin wollen wir mit dem Kidsprogramm folgendes erreichen:<br><br>Beweglichkeit<br>Körperverständnis<br>Hilfsbereitschaft<br>Selbstbewusstsein<br>Selbstständigkeit<br>Koordination und Gleichgewichtssinn<br>Toleranz/Respekt<br>Durchhaltevermögen<br><br>Jedes Kind im Alter von 3 bis 6 ist herzlich willkommen. Ein Reinschnuppern in eine Trainingsstunde ist jederzeit möglich.",
+    "bild":"",
     "datei": "",
     "dateiname":""
-  },
-  {
-    "datum": "23.03.2016",
-    "titel": "Nachwuchsturnier Monheim",
-    "beschreibung": "Wir haben teilgenommen. Die Ergebnisse könnte ihr in der beigefügten PDF Datei \"Beispieldatei für Download\" nachlesen.",
-    "bild":"",
-    "datei": "../assets/pdf/wo.pdf",
-    "dateiname":"Beispieldatei für Download"
   }
+
 ]

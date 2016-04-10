@@ -8,7 +8,7 @@
  * Controller of the bsdApp
  */
 angular.module('bsdApp')
-  .controller('BlogCtrl', function ($scope, $http, BlogService) {
+  .controller('BlogCtrl', function ($scope, $http, $sce, BlogService) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -23,4 +23,8 @@ angular.module('bsdApp')
 
 
     });
+    $scope.renderHtml = function(html_code)
+    {
+      return $sce.trustAsHtml(html_code);
+    };
   });

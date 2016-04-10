@@ -21,6 +21,8 @@ angular.module('bsdApp')
 
           });
           */
+
+
          return res.data;
 
         });
