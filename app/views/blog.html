@@ -12,12 +12,14 @@
             <h1 class="entry-title">{{item.titel}}</h1>
           </header>
           <div class="entry-content">
-            <p ng-if="item.bild != null"><img alt="" src="{{item.bild}}"></p>
+            <p ng-if="item.bild">
+              <img  alt="" src="{{item.bild}}">
+            </p>
             <p ng-bind-html="renderHtml(item.beschreibung)">
               {{item.beschreibung}}
             </p>
-            <p ng-if="item.datei != null">
-              <a href="{{item.datei}}" target="_blank">{{item.dateiname}}</a>
+            <p ng-if="item.datei">
+              <a  href="{{item.datei}}" target="_blank">{{item.dateiname}}</a>
             </p>
           </div>
         </article>
