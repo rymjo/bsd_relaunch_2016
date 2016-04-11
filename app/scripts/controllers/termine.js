@@ -19,7 +19,8 @@ angular.module('bsdApp')
       $anchorScroll();
     }
 
-
+    // termine in accordion
+    $scope.oneAtATime = true;
     $scope.allTermine = null;
     TerminService.allTermine().then(function(dataResponse) {
       console.log("call Terminservice" + dataResponse);
@@ -29,27 +30,11 @@ angular.module('bsdApp')
 
     });
 
-    $scope.openDetail = function(item){
-      console.log(item);
-      if ($scope.isOpen(item)){
-        $scope.opened = undefined;
-      } else {
-        $scope.opened = item;
-      }
-    }
-
-    $scope.isOpen = function(item){
-      return $scope.opened === item;
+    $scope.status = {
+      isFirstOpen: true,
+      isFirstDisabled: false
     };
 
-    $scope.anyItemOpen = function() {
-      return $scope.opened !== undefined;
-    };
 
-    $scope.close = function() {
-      $scope.opened = undefined;
-    };
-
-   // console.log("alltermine:" +   $scope.allTermine);
 
   });

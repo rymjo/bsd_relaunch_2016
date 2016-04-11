@@ -4,44 +4,18 @@
 
     <div class="row section topspace">
       <div class="col-md-12 maincontent">
-        <input type="text" ng-model="termine.search" class="search-query" id="termin_search"  placeholder="Datum...">
-        <table class="table table-striped">
-          <thead>
-          <tr>
-            <th ng-repeat="(key, val) in allTermine[0]">{{key | uppercase}}</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr ng-repeat="item in allTermine | filter:termine.search | orderBy:'datum':true">
-            <td ng-click="openDetail(item)" ng-repeat="(key, val) in item">
-              {{val}}
-            </td>
-          </tr>
-          </tbody>
-          <tfoot>
-          <tr>
-            <td><a herf ="http://www.itf-d.de/index.php/termine.html" target="_parent">ITF-D Termine</a></td>
-            <td>Termine der ITF Deutschland</td>
-          </tr>
-          <tr>
-            <td><a herf =" http://www.itf-nw.de/index.php/termine.html" target="_parent">ITF NW Termine</a></td>
-            <td>Termine des Landesverbandes Nordrhein-Westfalen</td>
-          </tr>
+        <input type="text" ng-model="termine.search" class="search-query" id="termin_search" placeholder="Datum...">
+        <p>&nbsp;</p>
+        <uib-accordion>
+          <uib-accordion-group ng-repeat="item in allTermine | filter:termine.search | orderBy:'datum':true">
+            <uib-accordion-heading>
+              {{item.datum}}: {{item.titel}}
+            </uib-accordion-heading>
+            {{item.beschreibung}}
+          </uib-accordion-group>
 
-          </tfoot>
-        </table>
-        <!--
-        <ng-switch on="anyItemOpen()">
+        </uib-accordion>
 
-          <div ng-switch-when="true">
-            <hr>
-            <div ng-controller="DetailCtrl">
-              {{opened.beschreibung}}: overlay: tweet, share, pin
-            </div>
-            <a ng-click="close()">close</a>
-          </div>
-        </ng-switch>
-            -->
       </div>
     </div>
   </div>

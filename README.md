@@ -36,12 +36,15 @@ Example blog.json:
 Example termin.json:
 [
   {
-    "datum": "24.03.2016",
-    "beschreibung": "Test 1"
-  },
-  {
-    "datum": "23.03.2016",
-    "beschreibung": " Test 2"
-  }
+      "datum": "24.03.2016",
+      "titel": "Gürtelprüfung",
+      "beschreibung": "Test 1"
+    },
+    {
+      "datum": "23.03.2016",
+      "titel": "Gürtelprüfung",
+      "beschreibung": "Test 2"
+    }
+
   
 ]
