@@ -35,7 +35,27 @@ Example blog.json:
     "bild":"",
     "datei": "../assets/pdf/wo.pdf",
     "dateiname":"Beispieldatei für Download"
-  }
+  }, 
+  "html5videos":[
+       {"videofiles": [
+         {"url":"../assets/video/monheim1/00001_h264.mp4", "type":"video/mp4"},
+         {"url":"../assets/video/monheim1/00001_h264.ogv", "type":"video/ogg"},
+         {"url":"../assets/video/monheim1/00001_h264.webm", "type":"video/webm"}]
+       },
+       {"videofiles": [
+         {"url":"../assets/video/monheim2/00002_h264.mp4", "type":"video/mp4"},
+         {"url":"../assets/video/monheim2/00002_h264.ogv", "type":"video/ogg"},
+         {"url":"../assets/video/monheim2/00002_h264.webm", "type":"video/webm"}]},
+       {"videofiles": [
+         {"url":"../assets/video/monheim3/00003_h264.mp4", "type":"video/mp4"},
+         {"url":"../assets/video/monheim3/00003_h264.ogv", "type":"video/ogg"},
+         {"url":"../assets/video/monheim3/00003_h264.webm", "type":"video/webm"}]},
+       {"videofiles": [
+         {"url":"../assets/video/monheim4/00004_h264.mp4", "type":"video/mp4"},
+         {"url":"../assets/video/monheim4/00004_h264.ogv", "type":"video/ogg"},
+         {"url":"../assets/video/monheim4/00004_h264.webm", "type":"video/webm"}]}
+     ]
+  
 ]
 
 Example termin.json:

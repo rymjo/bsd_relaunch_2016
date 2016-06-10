@@ -4,7 +4,7 @@
     <div class="row topspace">
       <div class="col-sm-8 col-sm-offset-2">
 
-        <article class="post" ng-repeat="item in allBlogEntries | orderBy:'datum':true">
+        <article class="post" ng-repeat="item in allBlogEntries | orderBy:'datum':false">
           <header class="entry-header">
             <div class="entry-meta">
               <span class="posted-on"><time class="entry-date published" date="{{item.datum}}">{{item.datum}}</time></span>
@@ -22,9 +22,29 @@
               <a href="{{item.datei}}" target="_blank">{{item.dateiname}}</a>
             </p>
           </div>
+          <div class="row section recentworks topspace" ng-if="item.html5videos">
+
+            <h2 class="section-title"><span>Videos</span></h2>
+
+            <div class="thumbnails recentworks row">
+
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" ng-repeat="vfiles in item.html5videos">
+
+
+                  <video class="video" preload="metadata" autobuffer controls>
+                    <div>Schade – hier käme ein Video, wenn Ihr
+                      Browser HTML5 Unterstützung hätte, wie z.B. der
+                      aktuelle Firefox</div>
+                    <source ng-repeat="media in vfiles.videofiles" src="{{ media.url }}" type="{{ media.type }}">
+                  </video>
+
+              </div>
+            </div>
+          </div>
         </article>
       </div>
     </div>
+
      <!--
     <center class="">
       <ul class="pagination">
