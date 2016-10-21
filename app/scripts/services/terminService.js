@@ -16,13 +16,6 @@ angular.module('bsdApp')
       promise = $http.get('./assets/json/termine.json', { cache: 'true'})
         .then(function(res){
 
-         /* angular.forEach(res.data, function(value, key) {
-            console.log(JSON.stringify(value) + ":" + key);
-
-          });
-          */
-
-
          return res.data;
 
         });

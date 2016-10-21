@@ -20,50 +20,22 @@
       </div>
     </div>
     <!-- / section -->
-    <!--
-    <div class="row section featured topspace">
-      <h2 class="section-title"><span>Services</span></h2>
+
+    <div class="row section featured topspace ">
+      <h2 class="section-title"><span>Neuigkeiten</span></h2>
 
       <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">Custom website design</h3>
-
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did
-            the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are
-            no perfect men.</p>
-
-          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">Wordpress integration</h3>
-
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did
-            the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are
-            no perfect men.</p>
-
-          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">Application development</h3>
-
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did
-            the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are
-            no perfect men.</p>
-
-          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <h3 class="text-center">SEO &amp; SEM services</h3>
-
-          <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did
-            the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are
-            no perfect men.</p>
-
-          <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+        <div class="col-sm-6 col-md-3" ng-repeat="item in allBlogEntries | filter:showOnHomescreen | orderBy:'datum':false">
+          <h3 class="text-center">{{item.titel}}</h3>
+          <span class="posted-on"><time class="entry-date published" date="{{item.datum}}">{{item.datum}}</time></span>
+          <p>
+            {{item.beschreibung | limitTo: 50 }}{{item.beschreibung.length > 50 ? '...' : ''}}
+          </p>
+          <p class="text-center"><a href="#/blog" class="btn btn-action">Mehr lesen</a></p>
         </div>
       </div>
     </div>
-    -->
+
     <!-- / section -->
       <!-- Bilder
     <div class="row section recentworks topspace">

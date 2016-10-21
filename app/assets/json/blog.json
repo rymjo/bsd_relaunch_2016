@@ -5,7 +5,8 @@
     "beschreibung": "Zuerst gratulieren wir Sebastian Korona herzlichst zu seiner bestandenen Dan-Prüfung.<br><br>Und ab dem 01.10.2016 findet das Kickboxtraining montags von 18-20 Uhr in die Turnhalle an der Bernburgerstr. 44 statt.",
     "bild":"",
     "datei": "",
-    "dateiname":""
+    "dateiname":"",
+    "showOnHomescreen":"1"
   },
   {
     "datum": "08.06.2016",
@@ -14,6 +15,7 @@
     "bild":"",
     "datei": "",
     "dateiname":"",
+    "showOnHomescreen":"1",
     "html5videos":[
       {"videofiles": [
         {"url":"../assets/video/monheim1/00001_h264.mp4", "type":"video/mp4"},
@@ -40,7 +42,8 @@
     "beschreibung": "Es ist wichtig, Kinder schon im frühen Alter für Spaß am Sport zu begeistern. Leider sind die Möglichkeiten/Angebote an sportlichen Aktivitäten für Kinder im Alter zwischen 3 und 6 sehr begrenzt. Wir als Verein bieten für diese spezielle Altersgruppe ein Programm an, mit welchem wir den Kindern spielerisch Spaß am Sport vermitteln wollen. Weiterhin wollen wir mit dem Kidsprogramm folgendes erreichen:<br><br>Beweglichkeit<br>Körperverständnis<br>Hilfsbereitschaft<br>Selbstbewusstsein<br>Selbstständigkeit<br>Koordination und Gleichgewichtssinn<br>Toleranz/Respekt<br>Durchhaltevermögen<br><br>Jedes Kind im Alter von 3 bis 6 ist herzlich willkommen. Ein Reinschnuppern in eine Trainingsstunde ist jederzeit möglich.",
     "bild":"",
     "datei": "",
-    "dateiname":""
+    "dateiname":"",
+    "showOnHomescreen":"1"
   }
 
 ]
