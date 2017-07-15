@@ -4,7 +4,7 @@
     <div class="row topspace">
       <div class="col-sm-8 col-sm-offset-2">
 
-        <article class="post" ng-repeat="item in allBlogEntries | orderBy:'datum':false">
+        <article class="post" ng-repeat="item in allBlogEntries | orderBy:'datum':true">
           <header class="entry-header">
             <div class="entry-meta">
               <span class="posted-on"><time class="entry-date published" date="{{item.datum}}">{{item.datum}}</time></span>
