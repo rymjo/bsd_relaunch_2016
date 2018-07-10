@@ -1,6 +1,24 @@
 [
+ {
+    "datum": "2017-09-24",
+    "titel": "Sommerfest 2017",
+    "beschreibung": "Am 24.09.2017 fand unser Sommerfest an der Wasserski-Anlage in Langenfeld statt. Neben Grillen ging es auf die Bretter.",
+    "bild":"../assets/images/sommerfest_2017/1.jpg",
+    "datei": "",
+    "dateiname":"",
+    "showOnHomescreen":"1"
+  },
    {
-    "datum": "2017-07-15",
+    "datum": "2017-06-24",
+    "titel": "Neue Dan-Trägerin beim BSD",
+    "beschreibung": "Herzlichen Glückwunsch zum 1. Dan wünschen wir Alin Schulz, die am 24.06.2017 erfolgreich ihre Schwarzgurtprüfung bestand.<br><br>Gruß<br>Euer Trainerteam",
+    "bild":"",
+    "datei": "",
+    "dateiname":"",
+    "showOnHomescreen":"1"
+  },
+   {
+    "datum": "2017-06-15",
     "titel": "Neuer Trainingsort für Dienstag",
     "beschreibung": "Ab sofort findet das Dienstagstraining nun auch in der Turnhalle an der Bernburgerstr. 44 (Eller) statt.<br><br>Kidsprogramm 18:00 bis 18:45 Uhr<br>Tae-Kwon-Do 18:15 bis 20:00 Uhr<br><br>Damit sind wir nun komplett an Stützpunkt in Eller vertreten.<br><br>Gruß<br>Euer Trainerteam",
     "bild":"",
@@ -24,7 +42,7 @@
     "bild":"",
     "datei": "",
     "dateiname":"",
-    "showOnHomescreen":"1",
+    "showOnHomescreen":"0",
     "html5videos":[
       {"videofiles": [
         {"url":"../assets/video/monheim1/00001_h264.mp4", "type":"video/mp4"},
@@ -52,7 +70,7 @@
     "bild":"",
     "datei": "",
     "dateiname":"",
-    "showOnHomescreen":"1"
+    "showOnHomescreen":"0"
   }
 
 ]
