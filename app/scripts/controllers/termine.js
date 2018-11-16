@@ -8,7 +8,7 @@
  * Controller of the bsdApp
  */
 angular.module('bsdApp')
-  .controller('TermineCtrl', function ($scope, $location, $anchorScroll, $http, TerminService) {
+  .controller('TermineCtrl', function ($scope, $location, $anchorScroll, $http, $sce, TerminService) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -22,14 +22,13 @@ angular.module('bsdApp')
     // termine in accordion
     $scope.oneAtATime = true;
     $scope.allTermine = null;
-    TerminService.allTermine().then(function(dataResponse) {
-      console.log("call Terminservice" + dataResponse);
-      //return dataResponse;
+    TerminService.allTermine().then(function(dataResponse) {  
       $scope.allTermine = dataResponse;
-
-
     });
-
+    $scope.renderHtml = function(html_code)
+    {
+      return $sce.trustAsHtml(html_code);
+    };
     $scope.status = {
       isFirstOpen: true,
       isFirstDisabled: false

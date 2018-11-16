@@ -17,11 +17,7 @@ angular.module('bsdApp')
 
     $scope.allBlogEntries = null;
     BlogService.allBlogEntries().then(function(dataResponse) {
-      console.log("call BlogService" + dataResponse);
-      //return dataResponse;
       $scope.allBlogEntries = dataResponse;
-
-
     });
     $scope.renderHtml = function(html_code)
     {

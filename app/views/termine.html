@@ -11,7 +11,9 @@
             <uib-accordion-heading>
               {{item.datum}}: {{item.titel}}
             </uib-accordion-heading>
-            {{item.beschreibung}}
+            <p ng-bind-html="renderHtml(item.beschreibung)">
+             {{item.beschreibung}}
+            </p>
           </uib-accordion-group>
 
         </uib-accordion>
